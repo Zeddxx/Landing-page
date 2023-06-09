@@ -682,8 +682,8 @@ footer {
     flex-direction: column;
     padding: 0;
     position: absolute;
-    height: 40vh;
-    top: -300px;
+    height: 100vh;
+    top: -1200px;
     left: 0;
     width: 100%;
     background: #1a1a1a;
