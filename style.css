@@ -102,11 +102,11 @@ li {
   z-index: 1;
   background-color: #1a1a1a;
   border-left: 2px solid #ff9142;
-  animation: animate 4s steps(12) infinite;
+  animation: animate 5s steps(20) infinite;
 }
 @keyframes animate{
   40%, 60%{
-      left: calc(100%);
+      left: 100%;
   }
   100%{
       left: 0%;

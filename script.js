@@ -19,10 +19,10 @@ const textLoad = () => {
     },0)
     setTimeout(() => {
         textEl.textContent = 'Buisness';
-    },4000)
+    },5000)
     setTimeout(() => {
         textEl.textContent = 'Company';
-    },8000)
+    },10000)
 }
 textLoad()
-setInterval(textLoad,12000)
+setInterval(textLoad,15000)
