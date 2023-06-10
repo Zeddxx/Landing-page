@@ -11,3 +11,18 @@ setTimeout(() => {
     element.classList.add("show");
     }, 12000);
       
+
+const textEl = document.querySelector('.text');
+const textLoad = () => {
+    setTimeout(() => {
+        textEl.textContent = 'Personal';
+    },0)
+    setTimeout(() => {
+        textEl.textContent = 'Buisness';
+    },4000)
+    setTimeout(() => {
+        textEl.textContent = 'Company';
+    },8000)
+}
+textLoad()
+setInterval(textLoad,12000)
