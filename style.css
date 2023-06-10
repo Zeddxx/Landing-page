@@ -832,6 +832,6 @@ footer {
 
 @media screen and (max-width: 545px){
   .heading h1 .text{
-    width: 75%;
+    width: 100%;
   }
 }
