@@ -625,16 +625,16 @@ footer {
   width: 120px;
   background: url('./Projects/pngwing.com.png') no-repeat center;
   background-size: cover;
-  bottom: 0;
+  bottom: -230px;
   right: 0;
   cursor: pointer;
   z-index: 9;
   font-size: 3rem;
-  display: none;
   text-align: center;
+  transition: all 0.7s ease;
 }
 .show{
-  display: block;
+  bottom: 0;
 }
 
 
