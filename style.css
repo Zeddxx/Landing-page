@@ -619,6 +619,24 @@ footer {
 .hamburger {
   display: none;
 }
+.bot{
+  position: fixed;
+  height: 120px;
+  width: 120px;
+  background: url('./Projects/pngwing.com.png') no-repeat center;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 9;
+  font-size: 3rem;
+  display: none;
+  text-align: center;
+}
+.show{
+  display: block;
+}
+
 
 @media screen and (max-width: 992px) {
   .heading h1 {
@@ -675,6 +693,7 @@ footer {
     width: 100vw;
     overflow-x: hidden;
   }
+  
   .navbar {
     position: relative;
   }
@@ -682,7 +701,7 @@ footer {
     flex-direction: column;
     padding: 0;
     position: absolute;
-    height: 100vh;
+    height: 70vh;
     top: -1200px;
     left: 0;
     width: 100%;

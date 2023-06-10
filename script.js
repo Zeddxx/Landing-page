@@ -4,5 +4,10 @@ const hamburgerEl = document.querySelector('.hamburger'),
 hamburgerEl.addEventListener('click', () => {
     hamburgerEl.classList.toggle('active');
     menuEl.classList.toggle('toggle');
-})
+});
+
+setTimeout(() => {
+    const element = document.querySelector('.bot');
+    element.classList.add("show");
+    }, 12000);
       
