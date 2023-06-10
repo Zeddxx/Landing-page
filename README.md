@@ -18,9 +18,9 @@ Once the repository is cloned, you can install the dependencies and start the pr
 
 
 ​
-cd Landing-page
-npm install
-npm start
+-cd Landing-page
+-npm install
+-npm start
 ​
 
 
@@ -29,9 +29,7 @@ The project will be started on port 3000. You can access it in your browser by v
 
 ## Contributing
 
-We welcome contributions to the project. Please read the contribution guidelines before submitting a pull request:
-
-[https://<project-name>.com/contributing](https://<project-name>.com/contributing)
+We welcome contributions to the project. Please read the contribution guidelines before submitting a pull request.
 
 ## License
 
