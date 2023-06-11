@@ -24,5 +24,12 @@ const textLoad = () => {
         textEl.textContent = 'Company';
     },10000)
 }
-textLoad()
-setInterval(textLoad,15000)
+textLoad();
+setInterval(textLoad,15000);
+
+const worksEl = document.querySelector('.works'),
+      optionEl = document.querySelector('.option'); 
+      
+    worksEl.addEventListener('click', () => {
+        optionEl.classList.toggle('showOption');
+    })

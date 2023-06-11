@@ -59,6 +59,28 @@ li {
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 30px;
 }
+.option{
+  position: absolute;
+  top: 40px;
+  right: 16rem;
+  height: 14.4rem;
+  width: 12rem;
+  padding: 0;
+  background: #1a1a1a;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  visibility: hidden;
+}
+.option:hover{
+  visibility: visible;
+}
+.works:hover + .option{
+  visibility: visible;
+}
 
 .hero-section {
   height: 100vh;
@@ -84,6 +106,7 @@ li {
   top: 10.625rem;
   right: 13.504rem;
   z-index: 3;
+  pointer-events: none;
 }
 .heading {
   overflow: hidden;
@@ -738,7 +761,7 @@ footer {
   }
   
   .navbar {
-    position: relative;
+    position: sticky;
   }
   .menu {
     flex-direction: column;
@@ -753,6 +776,23 @@ footer {
     justify-content: center;
     z-index: -1;
     transition: all 0.5s ease;
+    text-align: start;
+  }
+  .option{
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  .showOption{
+    opacity: 1;
+    display: flex;
   }
   .toggle {
     top: 54px;
@@ -760,6 +800,7 @@ footer {
   .menu a {
     font-size: 1.1rem;
   }
+
   .page1 {
     margin-top: 2rem;
     height: 120vh;
