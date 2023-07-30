@@ -72,7 +72,11 @@ const worksEl = document.querySelector('.works'),
             // console.log(e.clientY);
         })
 
-const tl = gsap.timeline({defaults: {ease : "power1.out"}})
-tl.fromTo('.word', {y: '100%', duration: 1}, {y: 0, duration: 1})
+const tl = gsap.timeline({defaults: {ease : "power2.out"}})
+tl.to('.word', {y: '0%', duration: 1, stagger: .3})
 tl.to('.loading', {y: "-100%", duration: 1, delay: 1})
 tl.to('.intro', {y: '-100%', duration: 1}, '-=.8')
+tl.fromTo('.navbar', {y: "-100%", duration: 1}, {y: "0%", duration: 1})
+tl.fromTo('.logo', {x: "-150%", duration: 1, opacity: 0}, {x: "0", duration: 1, opacity: 1})
+tl.fromTo('.menu', {x: "150%", duration: 1, opacity: 0}, {x: "0", duration: 1, opacity: 1}, "-=1")
+tl.fromTo('.hamburger-btn', {x: "100%", duration: 1, opacity: 0}, {x: "0", duration: 1, opacity: 1}, "-=1")
