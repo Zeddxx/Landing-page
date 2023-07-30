@@ -687,7 +687,53 @@ footer {
   bottom: 0;
 }
 
+.blur-circle{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: greenyellow;
+  position: fixed;
+  filter: blur(80px);
+  z-index: 2;
+  pointer-events: none;
+}
 
+.loading{
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  z-index: 84;
+}
+.intro{
+  height: 100%;
+  width: 100%;
+  z-index: 83;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  color: #fff;
+}
+.intro-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hide{
+text-align: left;
+overflow: hidden;
+}
+.hide > h1{
+  line-height: .8;
+  letter-spacing: .2rem;
+  font-size: 4rem;
+  font-weight: lighter;
+}
 @media screen and (max-width: 992px) {
   .heading h1 {
     width: auto;

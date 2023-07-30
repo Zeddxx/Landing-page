@@ -62,3 +62,17 @@ const worksEl = document.querySelector('.works'),
     worksEl.addEventListener('click', () => {
         optionEl.classList.toggle('showOption');
     })
+
+        let blur = document.querySelector('.blur-circle');
+        document.addEventListener('mousemove', (e) => {
+            
+            blur.style.left = e.clientX - 60 + 'px';
+            blur.style.top = e.clientY - 60 + 'px';
+            // console.log(e.clientX);
+            // console.log(e.clientY);
+        })
+
+const tl = gsap.timeline({defaults: {ease : "power1.out"}})
+tl.fromTo('.word', {y: '100%', duration: 1}, {y: 0, duration: 1})
+tl.to('.loading', {y: "-100%", duration: 1, delay: 1})
+tl.to('.intro', {y: '-100%', duration: 1}, '-=.8')
